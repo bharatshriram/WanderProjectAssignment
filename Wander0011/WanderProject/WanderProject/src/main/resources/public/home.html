@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Note</title>
+<link rel="icon" type="image/jpg" href="images/note.png" />
+<link rel="stylesheet" href="files/common/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="files/login/css/login.css" />
+
+<link rel="stylesheet" type="text/css"
+	href="files/common/css/glyphicon_common.css" />
+
+<script src="files/common/js/jquery.min.js"></script>
+<script src="files/common/js/bootstrap.min.js"></script>
+<script src="files/common/js/bootbox.min.js"></script>
+<script src="files/common/js/bootbox.js"></script>
+<script src="files/common/js/jquery.min.js"></script>
+
+<script src="js/Note.js"></script>
+</head>
+<style>
+
+#logo1 {
+    /* margin-left: 400px; */
+    height: 100%;
+    /* margin-top: -32px; */
+    width: 100%;
+    background: url(../../../images/background.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+</style>
+<body>
+
+	<div id="logo1">
+		<div class="col-md-1">
+
+
+			<img src="images/Wanderlogo.PNG" width="110" height="60px" />
+		</div>
+		<div class="col-md-1">
+			<div id="div_Note_id" name="Add" title="Add Note" data-toggle="modal"
+				data-target="#myModal">
+				<span class="glyphicon glyphicon-plus-sign"
+					style="cursor: pointer; font-size: 30px; color: black"></span>
+			</div>
+		</div>
+
+		<div class="col-md-3"></div>
+		<div class="col-md-8" align="center" style="width: 200px; height: 29;">
+			<h4 style="font-size: 20px">
+				<i><b>Note Details</b></i>
+			</h4>
+		</div>
+
+		<div class="col-md-1"></div>
+		<div class="col-md-12" align="left" id="count"
+			style="width: 200px; height: 29;">
+			<span class="glyphicon glyphicon-log-out"
+					style="cursor: pointer; font-size: 30px; color: black"></span>
+			
+			</div>
+
+		<div class="col-md-12">
+			<table class="table table-hover">
+				<thead id="thead1">
+					<tr>
+						<th align=center><i>RoleId</i></th>
+						<th align=center><i>NoteId</i></th>
+						<th align=center><i>Title</i></th>
+						<th align=center><i>Description</i></th>
+						<th align=center><i>Creation</i></th>
+						<th align=center><i>Date</i></th>
+						<th align="center"><i>Edit</i></th>
+						<th align="center"><i>Delete</i></th>
+					</tr>
+				</thead>
+				<tbody id="notetable">
+
+				</tbody>
+
+			</table>
+
+		</div>
+
+		<!--container-->
+
+
+		<br />
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+			aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" align="center">Add Note</h4>
+					</div>
+					<div class="modal-body">
+						<form role="form" id="register" method="post"
+							class="form-horizontal">
+							<label id="dis" style="width: 250px;"></label><br>
+
+							<div class="form-group">
+								<label for="title" class="col-sm-2 control-label"> Title<span
+									id="star"><sup style="color: red">*</sup></span>
+								</label>
+
+								<div class="col-sm-4">
+									<input type="text" class="form-control" id="title_add_Name"
+										placeholder="Title" />
+								</div>
+								<label for="description" class="col-sm-2 control-label">
+									Description<span id="star"><sup style="color: red">*</sup></span>
+								</label>
+
+								<div class="col-sm-4">
+									<input type="text" class="form-control"
+										id="description_add_Name" placeholder="Descriptions" /> <label
+										id="dis" style="width: 250px;"></label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="creation" class="col-sm-2 control-label">
+									creation<span id="star"><sup style="color: red">*</sup></span>
+								</label>
+
+								<div class="col-sm-4">
+									<input type="text" class="form-control" id="creation_add"
+										placeholder="creation" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4"></div>
+								<div class="col-sm-8">
+									<input type="button" id="Note_Add" value="Save" class="saveAdd" />
+									<button type="button" class="saveAdd" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myEditNote" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title" align="center">Edit Note</h4>
+					</div>
+					<div class="modal-body">
+						<form role="form" id="register" method="post"
+							class="form-horizontal">
+							<label id="dis" style="width: 250px;"></label><br>
+							<div class="form-group">
+								<label for="title" class="col-sm-2 control-label"> Title<span
+									id="star"><sup style="color: red">*</sup></span>
+								</label>
+
+								<div class="col-sm-4">
+									<input type="text" class="form-control" id="title_edit_Name"
+										placeholder="Title" /> <input type="hidden" id="NoteIdHidden" />
+
+								</div>
+								<label for="description" class="col-sm-2 control-label">
+									Description<span id="star"><sup style="color: red">*</sup></span>
+								</label>
+
+								<div class="col-sm-4">
+									<input type="text" class="form-control"
+										id="description_edit_Name" placeholder="Descriptions" /> <label
+										id="dis" style="width: 250px;"></label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="creation" class="col-sm-2 control-label">
+									creation<span id="star"><sup style="color: red">*</sup></span>
+								</label>
+
+								<div class="col-sm-4">
+									<input type="text" class="form-control" id="creation_edit"
+										placeholder="creation" />
+								</div>
+							</div>
+
+
+
+							<div class="row">
+								<div class="col-sm-4"></div>
+								<div class="col-sm-8">
+									<input type="button" id="Note_Edit" value="Update"
+										class="saveAdd" />
+									<button type="button" class="saveAdd" data-dismiss="modal">Close</button>
+
+								</div>
+							</div>
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div align="center">
+			All rights reserved by Bharat<sup>TM</sup>
+		</div>
+	</div>
+
+
+</body>
+</html>

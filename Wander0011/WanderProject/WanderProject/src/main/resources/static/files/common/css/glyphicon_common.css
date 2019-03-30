@@ -1,0 +1,24 @@
+@charset "ISO-8859-1";
+
+#NoteEdit::before {
+	font-family: Glyphicons Halflings;
+	/* content: " \e231"; */
+	content: " \270f"; 
+	display: inline-block;
+	padding-left: 0px;
+	margin-left: 8px;
+	vertical-align: middle;
+	color: blue;
+}
+
+#NoteDelete::before {
+	font-family: Glyphicons Halflings;
+	content: "\e020";
+	display: inline-block;
+	padding-left: 0px;
+	margin-left: 8px;
+	vertical-align: middle;
+	color: red;
+}
+
+

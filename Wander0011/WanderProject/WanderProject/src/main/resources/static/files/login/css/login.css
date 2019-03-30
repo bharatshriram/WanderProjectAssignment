@@ -1,0 +1,174 @@
+.shadow{
+    -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border-left: 20px solid #18bc9c;
+    border-right: 20px solid #18bc9c;
+
+    overflow:hidden;
+}
+
+.btn-color1{
+    background-color:#18bc9c;
+    color:white;
+}
+
+.btn-color1:hover{
+    background-color:white;
+    color:#18bc9c;
+    border: 1px solid #18bc9c;
+}
+.input-group-addon {background:#18bc9c;
+    color: white;
+}
+
+/* *Header* */
+
+#header
+{
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: url(../.././images/theme1/blue_bg.jpg);
+}
+#header h3
+{
+    font-size: 16px;
+    color:#FFF;
+}
+#header_top_right
+{
+    padding-top: 5px;
+    padding-right: 10px;
+}
+#header_top_right a
+{
+    color:#FFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+#header_top_right a:hover
+{
+    color:greenyellow;
+}
+/* *footer* */
+#footer
+{
+	text-align:center;
+    position: fixed;
+ /*    background-color:#efbc05; */
+    font-weight:bold;
+    margin-right: auto;
+    margin-left: auto;
+    width: 99.9%;
+   /*  margin-left:-2px; */
+    color: #ff0080;
+    bottom:1px !important;
+}
+/* #footer:hover
+{
+    background-color:#efbc05;
+      color: #ff0080;
+    font-weight:bold;
+    width: 99%;
+    height: 30px; 
+    bottom:10px !important;
+} */
+
+
+/*-- //Login-Code --*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+#main_Body{
+	  background: url(../../../images/test.jpg);
+ 
+    background-attachment: fixed;
+    background-position: absolute;
+    background-size:100% 100%;
+    height:100%;
+    overflow-y:auto;
+	
+}
+
+#logo1{
+/*  margin-left:400px; */
+ height:100%;
+/*  margin-top:-32px; */
+ width:100%;
+ background: url(../../../images/background.jpg);
+ background-size:100% 100%;
+ position:absolute;
+ 
+ }
+ 
+#forgot{
+	color:yellow;
+}
+#forgot:hover{
+	color:#ff0080;
+}
+body {
+   background: url(../.././images/download.jpg);
+ background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+	font-family: 'Open Sans', sans-serif;
+	height: 100vh;
+}
+
+
+/*--footer--*/
+.footer p {
+    font-size: .9em;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.footer p a {
+    color: #f53e71;
+	-webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+	transition: 0.5s all;
+}
+.footer p a:hover {
+    color: #fff;
+	-webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+	transition: 0.5s all;
+}
+/*--//footer--*/
+
+
